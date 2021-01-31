@@ -11,6 +11,11 @@ var specialChars = $('#specialChars');
 var lowerChars = $('#lowerChars');
 var upperChars = $('#upperChars');
 
+var isTouchDevice = 'ontouchstart' in document.documentElement;
+if ( isTouchDevice ) {
+    password.prop('type','text');
+}
+
 // SHOW/HIDE PASS
 
 passVis.click(function() {
@@ -103,6 +108,6 @@ $('#length_selector').on('change', function() {
 
   $('#h1').click(function (){
 
-    window.location.href = "./index.html";
+    window.location.href = "./index.php";
 
   });

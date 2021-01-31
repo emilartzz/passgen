@@ -29,13 +29,16 @@
     <meta property="twitter:description" content="Generate a new random password.">
     <meta property="twitter:image" content="./img/passgen.tech.png">
 
+    <link rel="shortcut icon" href="./img/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel=”mask-icon” href=”./img/favicon.svg” color=”#000000">
+
 </head>
 <body>
 
     <div class="container">
 
         <div class="brand">
-            <h1 id="h1">Pass.it</h1>
+            <img id="h1" src="./img/passgen.tech.svg" alt="Passgen.tech">
             <h2>Random password generator </h2>
         </div>
 
@@ -48,7 +51,7 @@
 
                 <div class="generator">
                     <button title="Hide/Show password" alt="Hide/Show password" id="passVis" ><i id="passVisEye" class="fas fa-eye-slash"></i></button>
-                    <input type="password" name="outPass" id="outPass" placeholder="secret password">
+                    <input type="password" name="outPass" id="outPass" placeholder="secure password">
                     <button title="Copy password" alt="Copy password" id="copyPass"><i class="fas fa-copy"></i></button>
                 </div>
             </div>
@@ -66,7 +69,7 @@
                         <option value="32">32 character</option>
                         <option value="0">Custom Value</option>
                     </select>
-                    <input type="number" name="customLength" id="customLength">
+                    <input type="number" name="customLength" id="customLength" placeholder="Custom Value">
                 </div>
 
                 <div id="char_options">
