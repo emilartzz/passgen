@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: #212121;
+}
+
+html, body{
+  overflow: hidden;
+}
+
+body{
+    background: #D3CCE3;
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+}
+
+/* BRAND + DESCRIPTION */
+
+.brand{
+    width: 65%;
+    position: relative;
+    margin: 5% auto;
+}
+
+h1{
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+
+    cursor: pointer;
+}
+
+h2{
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 400;
+}
+
+/* PASSWORD GENERATOR */
+
+.passgen{
+
+    height: 360px;
+    width: 50%;
+    position: relative;
+    margin: 200px auto;
+
+    border-radius: 50px;
+    background: #D3CCE3;
+    box-shadow:  36px 36px 72px #b3adc1,
+                -36px -36px 72px #f3ebff;
+}
+
+.main_passgen{
+    background-color: #f3ebff;
+    border-radius: 50px 50px 0 0;
+    height: 50%;
+    padding-top: 40px;
+}
+
+.generator{
+    position: relative;
+    width: 75%;
+    height: 60%;
+    margin: auto;
+}
+
+#passVis{
+    outline: none;
+    cursor: pointer;
+    background-color: #f3ebff;
+    font-size: 32px;
+    margin-right: 3%;
+    width: 48px;
+    height: 48px;
+}
+
+#copyPass{
+    outline: none;
+    cursor: pointer;
+    background-color: #f3ebff;
+    font-size: 32px;
+    margin-left: 2%;
+    width: 48px;
+    height: 48px;
+}
+
+.main_passgen label{
+    display: block;
+    font-size: 24px;
+    font-family: 'Signika Negative', sans-serif;
+    width: 60%;
+    margin: auto;
+}
+
+.main_passgen #outPass{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    padding: 10px;
+    text-indent: 5px;
+    text-rendering: optimizeSpeed;
+    border-radius: 7px;
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    overflow-x: scroll;
+}
+
+/* SETTINGS */
+
+.settings{
+    display: flex;
+    padding: 30px 5% 30px 5%;
+}
+
+.length{
+    width: 30%;
+}
+
+#length_selector{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    text-indent: 0px;
+    text-rendering: optimizeSpeed;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+#lblLength{
+    display: block;
+    font-size: 24px;
+    font-family: 'Signika Negative', sans-serif;
+    margin: auto;
+}
+
+#customLength{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    text-indent: 0px;
+    text-rendering: optimizeSpeed;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    width: 25%;
+    display: none;
+}
+
+#char_options{
+    width: 40%;
+}
+
+#lblSpecialChars{
+    display: inline;
+    font-size: 24px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+/* CHECKBOX */
+
+.checkbox_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 18px;
+    cursor: pointer;    
+    font-size: 18px;
+    font-family: 'Signika Negative', sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .checkbox_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0px    ;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #b3adc1;
+    border-radius: 5px;
+  }
+  
+  .checkbox_container:hover input ~ .checkmark {
+    background-color: #716e77;
+  }
+
+  .checkbox_container input:checked ~ .checkmark {
+    background-color: #212121;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .checkbox_container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox_container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .special::after{
+    content: ' [ e.g. @#$% ]';
+    font-size: 16px;
+    color: #212121c5;
+  }
+
+  .uppercase::after{
+    content: ' [ e.g. ABCDEFGH ]';
+    font-size: 16px;
+    color: #212121c5;
+  }
+
+  .lowercase::after{
+    content: ' [ e.g. abcdefgh ]';
+    font-size: 16px;
+    color: #212121c5;
+  }
+
+  /* GENERATE BUTTON */
+
+  #generateButton{
+      width: 30%;
+      text-align: right;
+  }
+
+  #btnGenerator{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    text-indent: 5px;
+    text-rendering: optimizeSpeed;
+    border-radius: 7px;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    margin: 15% auto;
+}
