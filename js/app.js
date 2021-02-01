@@ -91,6 +91,8 @@ $('#copyPass').click(function() {
     document.execCommand("copy");
     
     password.prop('type','password');
+
+    alert('Copied password');
   });
 
 
