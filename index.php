@@ -30,7 +30,7 @@
     <meta property="twitter:image" content="./img/passgen.tech.png">
 
     <link rel="shortcut icon" href="./img/favicon.svg" sizes="any" type="image/svg+xml">
-    <link rel=”mask-icon” href=”./img/favicon.svg” color=”#000000">
+    <link rel="mask-icon" href="./img/favicon.svg" color="#000000">
 
 </head>
 <body>
@@ -50,9 +50,9 @@
                 <label for="outPass">Your Password :</label>
 
                 <div class="generator">
-                    <button title="Hide/Show password" alt="Hide/Show password" id="passVis" ><i id="passVisEye" class="fas fa-eye-slash"></i></button>
+                    <button title="Hide/Show password" id="passVis" ><i id="passVisEye" class="fas fa-eye-slash"></i></button>
                     <input type="password" name="outPass" id="outPass" placeholder="secure password">
-                    <button title="Copy password" alt="Copy password" id="copyPass"><i class="fas fa-copy"></i></button>
+                    <button title="Copy password" id="copyPass"><i class="fas fa-copy"></i></button>
                 </div>
             </div>
 
