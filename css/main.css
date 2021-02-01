@@ -30,6 +30,11 @@ img{
   cursor: pointer;
 }
 
+.brand span{
+  font-size: 1.5rem;
+  font-family: 'Signika Negative', sans-serif;
+}
+
 h2{
     font-family: 'Signika Negative', sans-serif;
     font-weight: 400;
@@ -260,6 +265,158 @@ h2{
 
 /* MEDIA QUERY */
 
+@media only screen and (min-width: 681px) and (max-width: 1640px){
+
+  .brand{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .brand img{
+    width: 35%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .passgen{
+    margin: 5vh auto;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: #D3CCE3;
+    border-radius: 10px;
+  }
+
+  .main_passgen{
+      background-color: #f3ebff;
+      border-radius: 5px 5px 0 0;
+      height: 25%;
+  }
+
+  .generator{
+    position: relative;
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #passVis{
+      display: inline;
+  }
+
+  .main_passgen label{
+      display: block;
+      font-size: 24px;
+      font-family: 'Signika Negative', sans-serif;
+      width: 65%;
+      margin: auto;
+  }
+
+  .main_passgen #outPass{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 32px;
+      padding: 10px;
+      text-indent: 5px;
+      text-rendering: optimizeSpeed;
+      border-radius: 7px;
+      background-color: rgb(255, 255, 255);
+      overflow-x: scroll;
+      margin-top: 10px;
+      display: inline;
+  }
+
+  #copyPass{
+    outline: none;
+    background-color: #f3ebff;
+    margin: 20px 5px 0 5px;
+    font-size: 32px;
+    height: 48px;
+    display: inline;
+  }
+  #copyPass i::after{
+    display: none;
+  }
+
+  /* SETTINGS */
+
+  .settings{
+    display: block;
+    padding: 30px 5% 30px 5%;
+  }
+
+  .length{
+    width: 100%;
+  }
+
+  #length_selector{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    text-indent: 0px;
+    text-rendering: optimizeSpeed;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    width: 70%;
+  }
+
+  #lblLength{
+    display: block;
+    font-size: 24px;
+    font-family: 'Signika Negative', sans-serif;
+  }
+
+  #customLength{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    text-indent: 0px;
+    text-rendering: optimizeSpeed;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    display: none;
+  }
+
+  #char_options{
+    width: 100%;
+    margin-top: 1%;
+  }
+
+  #lblSpecialChars{
+    display: inline;
+    font-size: 24px;
+    font-family: 'Signika Negative', sans-serif;
+  }
+
+  /* CHECKBOX */
+
+  .checkbox_container {
+    margin-top: 3%;
+  }
+
+  /* GENERATE BUTTON */
+
+  #generateButton{
+      width: 100%;
+      text-align: center;
+  }
+
+  #btnGenerator{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    text-indent: 5px;
+    text-rendering: optimizeSpeed;
+    border-radius: 7px;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    margin: 2% auto;
+  }
+
+}
+
 @media only screen and (max-width: 680px){
 
   .brand{
@@ -272,11 +429,6 @@ h2{
     width: 50%;
     height: auto;
     margin-top: 10px;
-  }
-
-  .brand span{
-    font-size: 1.5rem;
-    font-family: 'Signika Negative', sans-serif;
   }
 
   .brand h2{
@@ -320,7 +472,7 @@ h2{
       display: block;
       font-size: 24px;
       font-family: 'Signika Negative', sans-serif;
-      width: 75%;
+      width: 90%;
       margin: auto;
   }
 
@@ -348,7 +500,7 @@ h2{
   }
   #copyPass i::after{
     display: inline;
-    content: ' < Click here to copy';
+    content: ' Click here to copy';
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
   }
