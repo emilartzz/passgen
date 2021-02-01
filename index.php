@@ -38,7 +38,7 @@
     <div class="container">
 
         <div class="brand">
-            <img id="h1" src="./img/passgen.tech.svg" alt="Passgen.tech">
+            <img id="h1" src="./img/passgen.tech.svg" alt="Passgen.tech"><span>beta</span>
             <h2>Random password generator </h2>
         </div>
 

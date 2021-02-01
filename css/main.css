@@ -274,6 +274,11 @@ h2{
     margin-top: 10px;
   }
 
+  .brand span{
+    font-size: 1.5rem;
+    font-family: 'Signika Negative', sans-serif;
+  }
+
   .brand h2{
     display: none;
   }
@@ -343,7 +348,7 @@ h2{
   }
   #copyPass i::after{
     display: inline;
-    content: ' 🠔 Click here to copy';
+    content: ' < Click here to copy';
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
   }
@@ -422,7 +427,7 @@ h2{
     border-radius: 7px;
     width: 60%;
     background-color: rgb(255, 255, 255);
-    margin: 15% auto;
+    margin: 5% auto;
   }
 
 }
