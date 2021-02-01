@@ -267,6 +267,10 @@ h2{
 
 @media only screen and (min-width: 681px) and (max-width: 1640px){
 
+  body{
+    overflow-y: scroll;
+  }
+
   .brand{
     width: 80%;
     margin: 0 auto;
