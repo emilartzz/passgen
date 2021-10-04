@@ -110,6 +110,6 @@ $('#length_selector').on('change', function() {
 
   $('#h1').click(function (){
 
-    window.location.href = "./index.php";
+    window.location.href = "./index.html";
 
   });
